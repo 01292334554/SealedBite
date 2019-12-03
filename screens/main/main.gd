@@ -15,9 +15,7 @@ onready var hud_chrystalpos = [ \
 
 func _ready():
 	game.main = self
-#	load_screen( FIRST_SCN )
 	if game.debug:
-#		var _ret = gamestate.load_gamestate()
 		load_gamestate()
 	else:
 		load_screen( FIRST_SCN )

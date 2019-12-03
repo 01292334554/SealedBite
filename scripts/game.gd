@@ -71,10 +71,15 @@ func _input(_event):
 func am_i_visible( obj, offset = Vector2.ZERO ) -> bool:
 	if camera == null or camera.get_ref() == null: return false
 	if game.player == null: return true
+	
+	# original version checked if object was on camera
 #	var is_on_camera = obj.get_viewport_rect().has_point( obj.get_global_transform_with_canvas().origin + offset )
+#	return is_on_camera
+	
+	# new version just checks if far away player
 	var distance_from_player = ( ( obj.global_position + offset ) - game.player.global_position ).length()
 	return distance_from_player < 100
-#	return is_on_camera
+
 
 
 

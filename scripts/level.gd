@@ -1,12 +1,9 @@
 extends Node2D
 class_name Level
 
-#var starting_gamestate : Dictionary
 var can_pause = true
 
 func _ready() -> void:
-	#print( "FILNAME: ", filename )
-#	print( "STARTING GAMESTATE: ", gamestate.state )
 	call_deferred( "_get_starting_gamestate" )
 	call_deferred( "_set_player" )
 	call_deferred( "_set_camera" )
@@ -34,7 +31,6 @@ func _set_player() -> void:
 				player.dir_nxt = gamestate.state.current_dir
 	else:
 		var startpos = find_node( "starting_position" )
-		#print( "START POS NODE: ", startpos )
 		if startpos == null:
 			if game.debug: print( "Level: start position not found, using preset" )
 		else:
