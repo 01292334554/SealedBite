@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://assets/cave_entrance.png" type="Texture" id=1]
+[ext_resource path="res://assets/tileset.png" type="Texture" id=1]
 [ext_resource path="res://assets/sfx/cave_opening.wav" type="AudioStream" id=2]
 
 [sub_resource type="Curve" id=1]
@@ -15,7 +15,7 @@ emission_box_extents = Vector3( 5, 1, 1 )
 flag_disable_z = true
 gravity = Vector3( 0, 40, 0 )
 initial_velocity = 20.0
-angular_velocity = -1.63772e+006
+angular_velocity = -1.63772e+06
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 5.0
@@ -384,7 +384,7 @@ position = Vector2( -14, -48 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 0, 48, 24, 48 )
+region_rect = Rect2( 288, 48, 24, 48 )
 
 [node name="particles_right" type="Particles2D" parent="part_6"]
 show_behind_parent = true
@@ -403,7 +403,7 @@ position = Vector2( 12, -48 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 80, 0, 24, 48 )
+region_rect = Rect2( 368, 0, 24, 48 )
 
 [node name="particles_right" type="Particles2D" parent="part_5"]
 show_behind_parent = true
@@ -422,7 +422,7 @@ position = Vector2( -43, -48 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 24, 48, 40, 48 )
+region_rect = Rect2( 312, 48, 40, 48 )
 
 [node name="particles_left" type="Particles2D" parent="part_7"]
 show_behind_parent = true
@@ -441,7 +441,7 @@ position = Vector2( -2, -32 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 56, 16, 24, 32 )
+region_rect = Rect2( 344, 16, 24, 32 )
 
 [node name="particles_right" type="Particles2D" parent="part_4"]
 show_behind_parent = true
@@ -460,7 +460,7 @@ position = Vector2( -24, -24 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 0, 24, 24, 24 )
+region_rect = Rect2( 288, 24, 24, 24 )
 
 [node name="particles_left" type="Particles2D" parent="part_1"]
 show_behind_parent = true
@@ -479,7 +479,7 @@ position = Vector2( -13, -32 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 24, 16, 16, 32 )
+region_rect = Rect2( 312, 16, 16, 32 )
 
 [node name="particles_left" type="Particles2D" parent="part_2"]
 show_behind_parent = true
@@ -498,7 +498,7 @@ position = Vector2( 8, -16 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 40, 32, 16, 16 )
+region_rect = Rect2( 328, 32, 16, 16 )
 
 [node name="particles_right" type="Particles2D" parent="part_3"]
 show_behind_parent = true
