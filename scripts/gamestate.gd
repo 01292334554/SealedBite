@@ -128,8 +128,8 @@ func add_event( evtname ):
 
 var debug_gamestate = { \
 	"datetime" : 0, \
-	"events" : [], \
-#		"events" : [ "first dialog with wolf", "bitten" ], \
+#	"events" : [], \
+	"events" : [ "first dialog with wolf", "bitten" ], \
 #	"events" : [ "first dialog with wolf", "bitten" ,"black chrystal"], \
 #	"events" : ["green chrystal"], \
 #		"events" : ["green chrystal","white chrystal"], \
@@ -140,8 +140,8 @@ var debug_gamestate = { \
 	"switches" : [], \
 	"visited_stages" : [], \
 #	"current_lvl" : "", \
-	"current_lvl" : "res://zones/mountain/stage_05.tscn", \
-#	"current_lvl" : "res://zones/forest/stage_01.tscn", \
+#	"current_lvl" : "res://zones/mountain/stage_05.tscn", \
+	"current_lvl" : "res://zones/forest/stage_14.tscn", \
 #	"current_lvl" : "res://zones/cave/stage_04.tscn", \
 #		"current_pos" : "finish_position", \
 #		"current_pos" : "cutscene_position", \
