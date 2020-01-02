@@ -1,6 +1,6 @@
 extends Level
 
-var boss_energy := 10
+var boss_energy := 5
 
 func _ready():
 	game.main.get_node( "hud_layer/hud" ).call_deferred( "show" )
