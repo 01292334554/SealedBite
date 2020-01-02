@@ -128,8 +128,8 @@ func add_event( evtname ):
 
 var debug_gamestate = { \
 	"datetime" : 0, \
-	"events" : [], \
-#	"events" : [ "first dialog with wolf", "bitten" ], \
+#	"events" : [], \
+	"events" : [ "first dialog with wolf", "bitten" ], \
 #	"events" : [ "first dialog with wolf", "bitten" ,"black chrystal"], \
 #	"events" : ["green chrystal"], \
 #		"events" : ["green chrystal","white chrystal"], \

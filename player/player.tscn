@@ -124,7 +124,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 0.15, 0.45 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -60.0, -60.0, 0.0 ]
+"values": [ -60.0, -60.0, -10.0 ]
 }
 
 [sub_resource type="Animation" id=6]
@@ -152,7 +152,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0.0, -60.0 ]
+"values": [ -10.0, -60.0 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("aim:playing")
@@ -808,7 +808,7 @@ anims/fade_out = SubResource( 6 )
 
 [node name="aim" type="AudioStreamPlayer" parent="player_punch_mask"]
 stream = ExtResource( 3 )
-volume_db = -30.0
+volume_db = -36.0
 bus = "sfx"
 
 [node name="find_enemies" type="Area2D" parent="."]
@@ -974,7 +974,6 @@ anims/land = SubResource( 32 )
 anims/land_side = SubResource( 33 )
 
 [node name="aimstates" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="aim" type="Node" parent="aimstates"]
 script = ExtResource( 8 )
