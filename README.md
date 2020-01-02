@@ -1,6 +1,6 @@
 # Sealed Bite
 A game made for the 2019 Github GameOff Jam
-(https://img.itch.zone/aW1nLzI3MzY3NTcuZ2lm/original/pamLXy.gif)
+![](https://img.itch.zone/aW1nLzI3MzY3NTcuZ2lm/original/pamLXy.gif)
 
 
 Check out the game at
