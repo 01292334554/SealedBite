@@ -30,7 +30,7 @@ func _on_selected_item( item_no ):
 		0:
 			# start a new game 
 			if ( not gamestate.first_start ):
-				self.set_process_input( false )
+				self.set_physics_process( false )
 				var c  = preload( "res://screens/start_menu/check_menu.tscn" ).instance()
 				c.connect( "selected_item", self, "_on_check_menu" )
 				$checklayer.add_child( c )
@@ -54,7 +54,7 @@ func quit_game():
 
 func _on_check_menu( item ):
 #	$checklayer.get_child(0).queue_free()
-	set_process_input( true )
+	set_physics_process( true )
 	match item:
 		0:
 			pass

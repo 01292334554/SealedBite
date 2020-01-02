@@ -220,12 +220,12 @@ var fade_in := 0.0
 var fade_out := 0.0
 var music_state := -1
 var match_position := false
-func set_music( no : int, fade_out : float = 0.5, fade_in : float = 0.5, match_position : bool = false ):
+func set_music( no : int, _fade_out : float = 0.5, _fade_in : float = 0.5, _match_position : bool = false ):
 	if no == music_cur: return
 	self.music_nxt = no
-	self.fade_in = fade_in
-	self.fade_out = fade_out
-	self.match_position = match_position
+	self.fade_in = _fade_in
+	self.fade_out = _fade_out
+	self.match_position = _match_position
 	$music/vol_pitch_control.stop()
 	music_state = 0
 	music_fsm()

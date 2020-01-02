@@ -50,7 +50,7 @@ func deactivate():
 
 
 # THIS ONLY WORKS FOR A SINGLE UNSELECTABLE ITEM!
-func _physics_process(delta):
+func _physics_process(_delta):
 	if Input.is_action_just_pressed( "btn_down" ) or \
 		Input.is_action_just_pressed( "btn_right" ):
 			cur_item += 1

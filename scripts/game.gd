@@ -10,7 +10,7 @@ var nav = null setget _set_nav, _get_nav
 var main = null
 
 # warning-ignore:unused_class_variable
-var debug = false
+var debug = true
 
 #--------------------------------------
 func _set_player( v ):

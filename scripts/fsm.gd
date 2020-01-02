@@ -9,9 +9,9 @@ var state_lst = null
 var obj = null
 
 
-func _init( obj, states_parent_node, initial_state, debug = false ):
-	self.obj = obj
-	self.debug = debug
+func _init( _obj, states_parent_node, initial_state, _debug = false ):
+	self.obj = _obj
+	self.debug = _debug
 	_set_states_parent_node( states_parent_node )
 	state_nxt = initial_state
 	pass

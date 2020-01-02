@@ -21,7 +21,7 @@ void fragment()
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = SubResource( 1 )
-shader_param/max_angle = 0.1
+shader_param/max_angle = 0.5
 
 [sub_resource type="Shader" id=3]
 code = "shader_type canvas_item;
