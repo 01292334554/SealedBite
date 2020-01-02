@@ -141,7 +141,7 @@ var debug_gamestate = { \
 	"visited_stages" : [], \
 #	"current_lvl" : "", \
 #	"current_lvl" : "res://zones/mountain/stage_05.tscn", \
-	"current_lvl" : "res://zones/forest/stage_07.tscn", \
+	"current_lvl" : "res://zones/forest/stage_14.tscn", \
 #	"current_lvl" : "res://zones/cave/stage_04.tscn", \
 #		"current_pos" : "finish_position", \
 #		"current_pos" : "cutscene_position", \
@@ -151,7 +151,7 @@ var debug_gamestate = { \
 	"can_double_jump" : true, \
 	"can_wall_jump" : true, \
 	"can_attack" : true, \
-	"can_push" : true, \
+	"can_push" : false, \
 	"green_chrystal" : false, \
 	"white_chrystal" : false, \
 	"red_chrystal" : false, \
