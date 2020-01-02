@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://zones/forest/stage_20.gd" type="Script" id=1]
+[ext_resource path="res://zones/forest/unused/stage_20.gd" type="Script" id=1]
 [ext_resource path="res://assets/tileset_forest.tres" type="TileSet" id=2]
 [ext_resource path="res://props/altars/altar_1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://props/altars/altar_2.tscn" type="PackedScene" id=4]
@@ -13,6 +13,7 @@
 [ext_resource path="res://props/water/water.tscn" type="PackedScene" id=11]
 [ext_resource path="res://props/backgrounds/forest_background.tscn" type="PackedScene" id=12]
 [ext_resource path="res://props/fadeout_layer/fadeout_layer.tscn" type="PackedScene" id=13]
+
 
 [sub_resource type="Animation" id=15]
 resource_name = "default"

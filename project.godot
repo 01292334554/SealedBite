@@ -92,6 +92,10 @@ game="*res://scripts/game.gd"
 gamestate="*res://scripts/gamestate.gd"
 signal_mgr="*res://scripts/signal_mgr.gd"
 
+[debug]
+
+settings/fps/force_fps=60
+
 [display]
 
 window/size/width=240

@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://zones/forest/stage_04.gd" type="Script" id=1]
+[ext_resource path="res://zones/forest/unused/stage_04.gd" type="Script" id=1]
 [ext_resource path="res://assets/tileset_forest.tres" type="TileSet" id=2]
 [ext_resource path="res://props/trees/tree_2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://enemies/slime/slime.tscn" type="PackedScene" id=4]
