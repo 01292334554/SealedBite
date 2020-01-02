@@ -20,7 +20,8 @@ var cur_item = 0
 
 func _ready():
 	if not is_active:
-		set_process_input( false )
+#		set_process_input( false )
+		set_physics_process( false )
 	update_menu()
 func update_menu():
 	items = []
@@ -37,35 +38,58 @@ func update_menu():
 
 func activate():
 	is_active = true
-	set_process_input( true )
+#	set_process_input( true )
+	set_physics_process( true )
 	cur_item = 0
 	set_item()
 
 func deactivate():
 	is_active = false
-	set_process_input( false )
+#	set_process_input( false )
+	set_physics_process( false )
 
 
 # THIS ONLY WORKS FOR A SINGLE UNSELECTABLE ITEM!
-func _input( evt ):
-	if evt.is_action_pressed( "btn_down" )or \
-			evt.is_action_pressed( "btn_right" ):
-		cur_item += 1
-		if cur_item >= items.size(): cur_item -= items.size()
-		if unselectable_items.find( items[cur_item] ) != -1:
+func _physics_process(delta):
+	if Input.is_action_just_pressed( "btn_down" ) or \
+		Input.is_action_just_pressed( "btn_right" ):
 			cur_item += 1
 			if cur_item >= items.size(): cur_item -= items.size()
-		set_item()
-	if evt.is_action_pressed( "btn_up" ) or \
-			evt.is_action_pressed( "btn_left" ):
-		cur_item -= 1
-		if cur_item < 0: cur_item += items.size()
-		if unselectable_items.find( items[cur_item] ) != -1:
+			if unselectable_items.find( items[cur_item] ) != -1:
+				cur_item += 1
+				if cur_item >= items.size(): cur_item -= items.size()
+			set_item()
+	if Input.is_action_just_pressed( "btn_up" ) or \
+		Input.is_action_just_pressed( "btn_left" ):
 			cur_item -= 1
 			if cur_item < 0: cur_item += items.size()
-		set_item()
-	if evt.is_action_pressed( "btn_jump" ) or evt.is_action_pressed( "btn_fire" ):
-		emit_signal( "selected_item", cur_item )
+			if unselectable_items.find( items[cur_item] ) != -1:
+				cur_item -= 1
+				if cur_item < 0: cur_item += items.size()
+			set_item()
+	if Input.is_action_just_pressed( "btn_jump" ) or \
+		Input.is_action_just_pressed( "btn_fire" ):
+			emit_signal( "selected_item", cur_item )
+
+#func _input( evt ):
+#	if evt.is_action_pressed( "btn_down" )or \
+#			evt.is_action_pressed( "btn_right" ):
+#		cur_item += 1
+#		if cur_item >= items.size(): cur_item -= items.size()
+#		if unselectable_items.find( items[cur_item] ) != -1:
+#			cur_item += 1
+#			if cur_item >= items.size(): cur_item -= items.size()
+#		set_item()
+#	if evt.is_action_pressed( "btn_up" ) or \
+#			evt.is_action_pressed( "btn_left" ):
+#		cur_item -= 1
+#		if cur_item < 0: cur_item += items.size()
+#		if unselectable_items.find( items[cur_item] ) != -1:
+#			cur_item -= 1
+#			if cur_item < 0: cur_item += items.size()
+#		set_item()
+#	if evt.is_action_pressed( "btn_jump" ) or evt.is_action_pressed( "btn_fire" ):
+#		emit_signal( "selected_item", cur_item )
 
 func set_item():
 	for idx in range( items.size() ):
