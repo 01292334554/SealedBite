@@ -63,6 +63,7 @@ position = Vector2( 252, 120 )
 position = Vector2( 528, 224 )
 
 [node name="enemies" type="Node2D" parent="."]
+editor/display_folded = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -115,7 +116,6 @@ __meta__ = {
 }
 
 [node name="forest" type="TileMap" parent="."]
-editor/display_folded = true
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 8, 8 )
 cell_y_sort = true
@@ -217,10 +217,10 @@ __meta__ = {
 
 [node name="hold_down_tutorial" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0.635294 )
-margin_left = 324.0
-margin_top = 139.0
-margin_right = 364.0
-margin_bottom = 153.0
+margin_left = 291.706
+margin_top = 114.717
+margin_right = 331.706
+margin_bottom = 128.717
 custom_fonts/font = ExtResource( 14 )
 text = "Hold"
 uppercase = true
@@ -233,10 +233,10 @@ position = Vector2( -12, 9 )
 
 [node name="drop_down" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0.635294 )
-margin_left = 68.0
-margin_top = 80.0
-margin_right = 108.0
-margin_bottom = 94.0
+margin_left = 68.5007
+margin_top = 55.7166
+margin_right = 108.501
+margin_bottom = 69.7166
 custom_fonts/font = ExtResource( 14 )
 text = "Jump "
 uppercase = true
