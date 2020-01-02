@@ -130,7 +130,7 @@ func _wake_at_altars():
 			3, false, false )
 	yield( msg, "message_finished" )
 	
-	msg = game.show_message( "Find the 3 chrystals...", \
+	msg = game.show_message( "Find the 3 crystals...", \
 			$cutscenes/introduction_path/path_follow/forest_spirit, Vector2.ZERO, \
 			5, false, false )
 	yield( msg, "message_finished" )
@@ -160,7 +160,7 @@ func _wake_at_altars():
 	gamestate.state.visited_stages.append( "res://zones/cave/stage_06.tscn" )
 	game.main.get_node( "hud_layer/hud/game_map" ).call_deferred( "_update_map" )
 	
-	msg = game.show_message( "I've marked the chrystal locations on your map", \
+	msg = game.show_message( "I've marked the crystal locations on your map", \
 			$cutscenes/introduction_path/path_follow/forest_spirit, Vector2.ZERO, \
 			5, false, false )
 	yield( msg, "message_finished" )
@@ -224,7 +224,7 @@ func _on_white_altar( _body ) -> void:
 	$player.set_cutscene()
 	yield( get_tree().create_timer( 1 ), "timeout" )
 	
-	var msg = game.show_message( "The white chrystal", \
+	var msg = game.show_message( "The white crystal", \
 		$cutscenes/introduction_path/path_follow/forest_spirit, Vector2.ZERO, \
 		5, false, false )
 	yield( msg, "message_finished" )
@@ -244,7 +244,7 @@ func _on_red_altar( _body ) -> void:
 	
 	$cutscenes/introduction_path/path_follow/path_anim.play( "last_chrystal" )
 	
-	var msg = game.show_message( "The final chrystal", \
+	var msg = game.show_message( "The final crystal", \
 		$cutscenes/introduction_path/path_follow/forest_spirit, Vector2.ZERO, \
 		2.5, false, false )
 	yield( get_tree().create_timer( 2.5 ), "timeout" )

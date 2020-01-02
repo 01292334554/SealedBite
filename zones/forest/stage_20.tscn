@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://zones/forest/unused/stage_20.gd" type="Script" id=1]
+[ext_resource path="res://zones/forest/stage_20.gd" type="Script" id=1]
 [ext_resource path="res://assets/tileset_forest.tres" type="TileSet" id=2]
 [ext_resource path="res://props/altars/altar_1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://props/altars/altar_2.tscn" type="PackedScene" id=4]
@@ -14,8 +14,7 @@
 [ext_resource path="res://props/backgrounds/forest_background.tscn" type="PackedScene" id=12]
 [ext_resource path="res://props/fadeout_layer/fadeout_layer.tscn" type="PackedScene" id=13]
 
-
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=1]
 resource_name = "default"
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:visible")
@@ -42,7 +41,7 @@ tracks/1/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=2]
 resource_name = "transform"
 length = 21.0
 step = 0.2
@@ -71,7 +70,7 @@ tracks/1/keys = {
 "values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 9, 10, 11, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 19, 20, 21, 22, 23, 24, 25, 26, 19, 20, 21, 22, 23, 24, 25, 26, 19, 20, 21, 22, 23, 24, 25, 26, 19, 20, 21, 22, 23, 24, 25, 26, 19, 20, 21, 22, 23, 24, 25, 26, 19, 20, 21, 22, 23, 24, 25, 26, 19, 20, 21, 22, 23, 24, 25, 26, 19, 20, 21, 22, 23, 24, 25, 26, 19, 20, 21, 22, 23, 24, 25, 26 ]
 }
 
-[sub_resource type="RectangleShape2D" id=14]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 4, 32 )
 
 [node name="stage_20" type="Node2D"]
@@ -154,8 +153,8 @@ hframes = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="player_wolf_transformation"]
 autoplay = "default"
-anims/default = SubResource( 15 )
-anims/transform = SubResource( 16 )
+anims/default = SubResource( 1 )
+anims/transform = SubResource( 2 )
 
 [node name="forest" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
@@ -189,7 +188,7 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="starting_position"]
 position = Vector2( -20, -32 )
-shape = SubResource( 14 )
+shape = SubResource( 3 )
 disabled = true
 
 [node name="water" parent="." instance=ExtResource( 11 )]

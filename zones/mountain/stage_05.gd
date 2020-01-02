@@ -50,7 +50,7 @@ func _on_player_entered( _body ):
 			3, false, false )
 	yield( msg, "message_finished" )
 	
-	msg = game.show_message( "This is the white chrystal.", \
+	msg = game.show_message( "This is the white crystal.", \
 			$cutscenes/spirit_path/PathFollow2D/forest_spirit, Vector2.ZERO, \
 			3, false, false )
 	yield( msg, "message_finished" )

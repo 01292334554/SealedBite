@@ -41,7 +41,7 @@ func _on_player_entered( _body ):
 	$cutscenes/spirit_path/PathFollow2D/path_anim.play( "start" )
 	yield( get_tree().create_timer( 3.5 ), "timeout" )
 	
-	var msg = game.show_message( "You found the red chrystal!", \
+	var msg = game.show_message( "You found the red-ish crystal!", \
 			$cutscenes/spirit_path/PathFollow2D/forest_spirit, Vector2.ZERO, \
 			3, false, false )
 	yield( msg, "message_finished" )
