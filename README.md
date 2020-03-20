@@ -1,5 +1,5 @@
 # Sealed Bite
-A game made for the 2019 Github GameOff Jam
+A game made for the 2019 Github GameOff Jam using Godot 3.1.2
 ![](https://img.itch.zone/aW1nLzI3MzY3NTcuZ2lm/original/pamLXy.gif)
 
 
